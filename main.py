@@ -21,3 +21,7 @@ while user_input != "exit":
     user_input = input("Hey user, enter a number of days and I will convert it to hours!\n")
     for num_of_days_element in user_input.split(","):
         validate_and_execute()
+my_list = ["mango", "banana", "apple", "pineapple"]
+def check_the_list():
+    for gifts in my_list:
+        
