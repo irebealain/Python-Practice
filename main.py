@@ -1,5 +1,3 @@
-
-
 calculation_to_units = 24
 name_of_unit = "hours"
 
@@ -11,6 +9,8 @@ def days_to_units(num_of_days):
 def validate_and_execute():
     try:
         user_input_number = int(num_of_days_element)
+        
+        # we want to do conversion only for positive integers
         if user_input_number > 0:
             calculated_values = days_to_units(user_input_number)
             print(calculated_values)
@@ -21,8 +21,7 @@ def validate_and_execute():
 user_input = ""
 while user_input != "exit":
     user_input = input("Hey user, enter a number of days and I will convert it to hours!\n")
-    for num_of_days_element in user_input.split(","):
+    for num_of_days_element in set(user_input.split(",")):
         validate_and_execute()
 
-my_list = ["January", "Febeuary", "March", "April"]
-print(my_list[2])
+
