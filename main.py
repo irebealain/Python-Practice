@@ -7,4 +7,3 @@ while user_input != "exit":
     days_to_unit_dictionary = {"days": days_and_unit[0], "units": days_and_unit[1]}
     print(days_to_unit_dictionary)
     validate_and_execute(days_to_unit_dictionary)
-

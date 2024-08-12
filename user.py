@@ -14,5 +14,5 @@ class User:
         self.current_job_title = new_job_title
 
     def get_user_info(self):
-        print(
-            f"The user's email is {self.email} and the username is {self.name} and his current job title is {self.current_job_title}.")
+        print(f"The user's email is {self.email} and the username is {self.name} "
+              f"and his current job title is {self.current_job_title}.")
